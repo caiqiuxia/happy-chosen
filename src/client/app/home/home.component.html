@@ -1,12 +1,50 @@
-<p>
-  Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.
-</p>
-
-<form (submit)="addName()">
-  <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
-  <button type="submit">Add</button>
-</form>
-
-<ul>
-  <li *ngFor="let name of names">{{name}}</li>
-</ul>
+<!--<div class="weui-tab">
+  <div class="weui_tab_bd">
+    aaaa
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    aaa
+  </div>
+  <sd-tabbar></sd-tabbar>
+</div>-->
+<div class="weui_tab">
+    <div class="weui_tab_bd">
+        <div class="weui_tab_bd_item">
+            <h3>微信</h3>
+        </div>
+        <div class="weui_tab_bd_item">
+            <h3>通讯录</h3>
+        </div>
+        <div class="weui_tab_bd_item">
+            <h3>发现</h3>
+        </div>
+        <div class="weui_tab_bd_item">
+            <h3>我</h3>
+        </div>
+    </div>
+    <div class="weui_tabbar">
+        <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="http://weui.github.io/weui/images/icon_nav_button.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">微信</p>
+        </a>
+        <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="http://weui.github.io/weui/images/icon_nav_msg.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">通讯录</p>
+        </a>
+        <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="http://weui.github.io/weui/images/icon_nav_article.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">发现</p>
+        </a>
+        <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="http://weui.github.io/weui/images/icon_nav_cell.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">我</p>
+        </a>
+    </div>
+</div>
