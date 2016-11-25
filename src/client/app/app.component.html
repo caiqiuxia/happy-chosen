@@ -1,4 +1,8 @@
 <div class="container">
-    <sd-tabbar *ngIf="showTabbar()"></sd-tabbar>
-    <router-outlet></router-outlet>
+	<div class="weui-tab">
+		<div class="weui-tab__panel">
+			<router-outlet></router-outlet>
+		</div>
+		<sd-tabbar *ngIf="showTabbar()"></sd-tabbar>
+	</div>
 </div>

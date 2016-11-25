@@ -5,8 +5,5 @@ import { GameRoutes } from './game/index';
 
 export const routes: Routes = [
   ...IntroRoutes,
-  ...GameRoutes,
-  // ...AboutRoutes,
-  // ...LoginRoutes,
-  // ...IntroRoutes
+  ...GameRoutes
 ];

@@ -6,21 +6,18 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
 
-import { AboutModule } from './about/about.module';
-import { HomeModule } from './home/home.module';
-import { SharedModule } from './shared/shared.module';
 import { GameModule } from './game/game.module';
 import { IntroModule } from './intro/intro.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes), AboutModule, HomeModule, GameModule, IntroModule, SharedModule.forRoot()],
+  imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes), GameModule, IntroModule, SharedModule.forRoot()],
   declarations: [AppComponent],
   providers: [{
     provide: APP_BASE_HREF,
     useValue: '<%= APP_BASE %>'
   }],
   bootstrap: [AppComponent]
-
 })
 
 export class AppModule { }

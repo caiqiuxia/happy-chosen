@@ -3,9 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { ToolbarComponent } from './toolbar/index';
-import { NavbarComponent } from './navbar/index';
-import { NameListService } from './name-list/index';
 import { TabbarComponent } from './tabbar/index';
 
 /**
@@ -14,15 +11,14 @@ import { TabbarComponent } from './tabbar/index';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
-  declarations: [ToolbarComponent, NavbarComponent,TabbarComponent],
-  exports: [ToolbarComponent, NavbarComponent,
-    CommonModule, FormsModule, RouterModule,TabbarComponent]
+  declarations: [TabbarComponent],
+  exports: [CommonModule, FormsModule, RouterModule,TabbarComponent]
 })
 export class SharedModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: SharedModule,
-      providers: [NameListService]
+      providers: []
     };
   }
 }
